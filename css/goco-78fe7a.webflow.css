@@ -3379,9 +3379,10 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 600px;
-  padding-right: 10px;
-  padding-left: 10px;
+  height: 650px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3395,8 +3396,23 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #fff;
   color: #ea625f;
   text-decoration: none;
+}
+
+.blog-block:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fb9896;
+  background-color: #fff;
+}
+
+.blog-block.welcome-blog {
+  height: 650px;
+  padding: 20px 15px;
 }
 
 .div-block-57 {
@@ -3423,6 +3439,21 @@ blockquote {
   background-image: url('../images/IMG_7870.JPG');
   background-position: 50% 50%;
   background-size: cover;
+}
+
+.div-block-57.stass {
+  background-image: url('../images/Hvid-og-Blå-Enkel-Computer-Logo.png'), url('../images/IMG_7870.JPG');
+  background-position: 50% 50%, 50% 50%;
+  background-size: cover, cover;
+  background-repeat: no-repeat, repeat;
+}
+
+.div-block-57.fundbricks {
+  background-image: url('../images/5e8d8aa561ab57f4b1b2407e_logo_fundbricks-1.svg'), -webkit-gradient(linear, left top, left bottom, from(rgba(234, 98, 95, 0.12)), to(rgba(234, 98, 95, 0.12)));
+  background-image: url('../images/5e8d8aa561ab57f4b1b2407e_logo_fundbricks-1.svg'), linear-gradient(180deg, rgba(234, 98, 95, 0.12), rgba(234, 98, 95, 0.12));
+  background-position: 50% 50%, 0px 0px;
+  background-size: contain, auto;
+  background-repeat: no-repeat, repeat;
 }
 
 .paragraph-4 {
@@ -3457,6 +3488,7 @@ blockquote {
   margin-right: 10vw;
   margin-left: 10vw;
   padding: 20px 100px;
+  border-radius: 20px;
   background-color: #fff;
 }
 
