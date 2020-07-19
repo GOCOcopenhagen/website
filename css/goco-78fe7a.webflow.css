@@ -274,12 +274,8 @@ blockquote {
 }
 
 .section.page-header.image {
-  padding-bottom: 160px;
-  background-image: url('../images/newsletter.png');
-  background-position: 100% 20%;
-  background-size: 400px 300px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 
 .section.full-screen {
@@ -734,6 +730,10 @@ blockquote {
   align-items: center;
 }
 
+.col.lg-6.md-3.xs-2 {
+  width: auto;
+}
+
 .col.lg-6.sm-margin-bottom.stretch {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
@@ -835,7 +835,7 @@ blockquote {
   -webkit-align-content: stretch;
   -ms-flex-line-pack: stretch;
   align-content: stretch;
-  color: #fb9896;
+  color: rgba(234, 98, 95, 0.12);
 }
 
 .row.flex-horizontal {
@@ -871,9 +871,9 @@ blockquote {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -1739,8 +1739,18 @@ blockquote {
 }
 
 .no-bottom-margins {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   margin-bottom: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   color: #ea625f;
+  text-align: center;
 }
 
 .margin-top {
@@ -2440,12 +2450,12 @@ blockquote {
   color: #fff;
 }
 
-.short-paragraph {
+.hjem-short-paragraph-2 {
   width: 100%;
   color: #0b0b0b;
 }
 
-.short-paragraph.white {
+.hjem-short-paragraph-2.white {
   color: #fff;
 }
 
@@ -3207,6 +3217,7 @@ blockquote {
   bottom: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  color: #ea625f;
 }
 
 .circle {
@@ -3442,10 +3453,10 @@ blockquote {
 }
 
 .div-block-57.stass {
-  background-image: url('../images/Hvid-og-Blå-Enkel-Computer-Logo.png'), url('../images/IMG_7870.JPG');
-  background-position: 50% 50%, 50% 50%;
-  background-size: cover, cover;
-  background-repeat: no-repeat, repeat;
+  background-image: url('../images/Hvid-og-Blå-Enkel-Computer-Logo.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .div-block-57.fundbricks {
@@ -3640,6 +3651,113 @@ blockquote {
 }
 
 .heading-11 {
+  color: #ea625f;
+}
+
+.heading-12 {
+  color: #ea625f;
+}
+
+.paragraph-2-story {
+  color: #0b0b0b;
+  font-style: normal;
+}
+
+.paragraph-2-timeline {
+  color: #fb9896;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.paragraph-2-timeline.no-top-margins {
+  margin-top: 0px;
+}
+
+.paragraph-2-timeline.align-to-h1 {
+  margin-bottom: 6px;
+  margin-left: 5px;
+}
+
+.paragraph-2-timeline.divider-line {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.paragraph-2-timeline.short-paragraph {
+  width: 75%;
+}
+
+.paragraph-2-timeline.white {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.paragraph-2-timeline.footer {
+  margin-bottom: 0px;
+  font-size: 13px;
+}
+
+.paragraph-1-timeline {
+  color: #fb9896;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.paragraph-1-timeline.no-top-margins {
+  margin-top: 0px;
+}
+
+.paragraph-1-timeline.align-to-h1 {
+  margin-bottom: 6px;
+  margin-left: 5px;
+}
+
+.paragraph-1-timeline.divider-line {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.paragraph-1-timeline.short-paragraph {
+  width: 75%;
+}
+
+.paragraph-1-timeline.white {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.paragraph-1-timeline.footer {
+  margin-bottom: 0px;
+  font-size: 13px;
+}
+
+.hjem-f-r-kontakt-side {
+  display: block;
+  width: 100%;
+  margin-bottom: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #ea625f;
+  text-align: center;
+}
+
+.heading-13 {
+  color: #ea625f;
+}
+
+.heading-14 {
+  color: #ea625f;
+}
+
+.heading-15 {
+  color: #ea625f;
+}
+
+.heading-16 {
+  color: #ea625f;
+}
+
+.heading-17 {
   color: #ea625f;
 }
 
@@ -4157,7 +4275,7 @@ blockquote {
   .section-header {
     margin-bottom: 40px;
   }
-  .short-paragraph {
+  .hjem-short-paragraph-2 {
     text-align: left;
   }
   .computer-picture {
@@ -4659,6 +4777,12 @@ blockquote {
     letter-spacing: 2px;
     text-transform: uppercase;
   }
+  .paragraph-2-timeline.short-paragraph {
+    width: 100%;
+  }
+  .paragraph-1-timeline.short-paragraph {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5138,6 +5262,12 @@ blockquote {
     margin-right: 5vw;
     margin-left: 5vw;
   }
+  .paragraph-2-timeline.short-paragraph {
+    width: 100%;
+  }
+  .paragraph-1-timeline.short-paragraph {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5459,10 +5589,10 @@ blockquote {
   .team-container {
     margin-bottom: 0px;
   }
-  .short-paragraph {
+  .hjem-short-paragraph-2 {
     width: 100%;
   }
-  .short-paragraph.white {
+  .hjem-short-paragraph-2.white {
     display: none;
   }
   .computer-picture {
